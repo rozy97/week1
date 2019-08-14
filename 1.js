@@ -2,7 +2,7 @@
 // - show all
 // - push
 // - delete
-// - edit.
+// - edit
 
 const arrayObject = [
     {
@@ -37,10 +37,11 @@ arrayObject.push(pushArray);
 console.log(arrayObject);
 
 // delete
-arrayObject.pop();
+arrayObject.pop(); // delete index terakhir array
 console.log(arrayObject);
-arrayObject.shift();
+arrayObject.shift(); // delete index pertama
 console.log(arrayObject);
+
 
 // edit
 arrayObject[0] = pushArray;
