@@ -2,7 +2,7 @@
 // - show all
 // - push
 // - delete
-// - edit
+// - edit.
 
 const arrayObject = [
     {
