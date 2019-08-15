@@ -27,6 +27,12 @@ const arrayObject = [
     }
 ];
 
+// show all
+const showAll = arrayObject.map(obj => obj);
+console.log('array.map() show all array:');
+console.table(showAll);
+console.log('\n');
+
 // push
 let pushArray = {
     schoolName: "BSI",
@@ -34,15 +40,20 @@ let pushArray = {
     yearOut: 2017
 }
 arrayObject.push(pushArray);
-console.log(arrayObject);
+console.log('array.push method:');
+console.table(arrayObject);
+console.log('\n');
 
 // delete
+console.log('delete array index terakhir & pertama:')
 arrayObject.pop(); // delete index terakhir array
-console.log(arrayObject);
+// console.table(arrayObject);
 arrayObject.shift(); // delete index pertama
-console.log(arrayObject);
+console.table(arrayObject);
+console.log('\n');
 
 
 // edit
+console.log('edit array:');
 arrayObject[0] = pushArray;
-console.log(arrayObject);
+console.table(arrayObject);
