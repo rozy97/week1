@@ -1,6 +1,6 @@
 // cari mean, median, modus
 
-const arr = new Array(1, 2, 3, 4, 5, 6, 6, 2, 5, 8, 0, 6, 4, 10, 20, 30, 3, 3);
+const arr = new Array(1,2,3,4,4,1,10,10,10);
 
 
 const stats = myArr => {
@@ -21,24 +21,30 @@ const stats = myArr => {
     } else {
         median = (myArr[myArr.length / 2] + myArr[(myArr.length + 2) / 2]) / 2;
     }
-    console.log(`median = ${median}`);
+    console.log(`median = ${median}\n\n`);
 
     // modus
-    var modes = [], count = [], i, number, maxIndex = 0;
+    let modus = [], count = [], i, number, maxIndex = 0;
     for (i = 0; i < myArr.length; i += 1) {
         number = myArr[i];
+        console.log('number = ' +number);
         count[number] = (count[number] || 0) + 1;
+        console.log('count[number] = ' + count[number]);
         if (count[number] > maxIndex) {
             maxIndex = count[number];
+            console.log('maxIndex = ' + maxIndex);
+            console.log(count)
         }
+        console.log('--------------- \n');
     }
+    console.log(count);
     for (i in count)
         if (count.hasOwnProperty(i)) {
             if (count[i] === maxIndex) {
-                modes.push(Number(i));
+                modus.push(Number(i));
             }
         }
-    return modes;
+    return modus;
 }
 
 

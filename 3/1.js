@@ -14,3 +14,4 @@ const isPalindrome = str => {
 
 console.log(isPalindrome('nurses run'));
 console.log(isPalindrome('Makam'));
+console.log(isPalindrome('Bukan palindrome'));

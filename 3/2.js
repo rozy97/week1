@@ -1,7 +1,7 @@
 //  membaca array of numbers dan menjumlahkan
 //  seluruh member dari array tersebut sehingga hasilnya hanya berupa satu digit saja.
 
-const multiplyArray = arr => {
+const tambahAngka = arr => {
     let num, str;
     num = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -21,4 +21,4 @@ const multiplyArray = arr => {
     return parseInt(str);
 }
 
-console.log(multiplyArray([123,9,27]));
+console.log(tambahAngka([123,9,27]));
